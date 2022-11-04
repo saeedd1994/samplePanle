@@ -6,6 +6,15 @@ const routes: Routes = [
   {
     path: '',
     component: AppComponent
+  },
+  {
+    path: 'blogs',
+    loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
+  },
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full'
   }
 ];
 
