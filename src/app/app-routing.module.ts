@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'blogs',
-    loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
+    loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule),
   },
   {
     path: '**',
