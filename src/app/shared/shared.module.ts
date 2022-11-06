@@ -8,6 +8,9 @@ import { DividerComponent } from './divider/divider.component';
   declarations: [
     DividerComponent
   ],
+  exports: [
+    DividerComponent
+  ],
   imports: [
     CommonModule
   ]
