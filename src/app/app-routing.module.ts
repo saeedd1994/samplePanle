@@ -3,10 +3,10 @@ import {RouterModule, Routes} from '@angular/router';
 import {AppComponent} from "./app.component";
 
 const routes: Routes = [
-  {
-    path: '',
-    component: AppComponent
-  },
+  // {
+  //   path: '',
+  //   component: AppComponent
+  // },
   {
     path: 'blogs',
     loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule),

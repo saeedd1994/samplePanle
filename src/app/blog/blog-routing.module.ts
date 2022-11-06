@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {BlogListComponent} from "./blog-list/blog-list.component";
+import {BlogViewComponent} from "./blog-view/blog-view.component";
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'list',
     component: BlogListComponent,
+  },
+  {
+    path: 'blog-view',
+    component: BlogViewComponent,
   },
   {
     path: '**',
